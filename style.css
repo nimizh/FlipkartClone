@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+:root {
+  --main-bg-color: #2874f0;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: var(--main-bg-color);
+  font-family: "Quicksand", sans-serif;
+}
+nav {
+  display: flex;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 88px;
+  padding: 0 25px;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  height: 58px;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 18px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: azure;
+}
+nav ul li a:hover {
+  font-weight: bolder;
+}
+.search {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.search input {
+  height: 26px;
+  width: 30vw;
+  margin: 0 16px 0 36px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.btn {
+  background-color: #2874f0;
+  color: azure;
+  height: 53px;
+  padding: 5px 5px;
+  border: #2874f0 solid 1px;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+}
+.btn:hover {
+  font-weight: bold;
+}
+.container {
+  min-height: calc(100vh - 58px - 12vh);
+  background-color: white;
+  margin: 0;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  margin: 9px auto;
+  width: 80vw;
+  overflow: hidden;
+}
+.card {
+  max-width: 90vw;
+  margin: auto;
+  font-family: "Quicksand", sans-serif;
+  /* overflow: scroll; */
+}
+.card h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 26px;
+}
+.card-item {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 0 10px 0 20px;
+}
+.my1 {
+  margin: 5px 0%;
+}
+.my2 {
+  text-align: center;
+  padding: 15px 0;
+}
+.my3 {
+  margin: 5px 0% 5px 6px;
+}
+.text-center1 {
+  text-align: center;
+}
+.card h3 {
+  /* padding: 4px 0px; */
+  margin: 4px 0px;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  background-color: var(--main-bg-color);
+  height: 12vh;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+  /* body {
+    background-color: yellow;
+  } */
+  nav {
+    flex-direction: column;
+  }
+  .logo {
+    justify-content: center;
+    margin: 12px 0;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  .search {
+    justify-content: center;
+  }
+  nav ul {
+    height: 34px;
+  }
+  .slider {
+    height: 25vh;
+    width: 80vh;
+  }
+  .card img {
+    width: 140px;
+  }
+}
